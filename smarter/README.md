@@ -1,24 +1,60 @@
-# README
+# Smarter Agent Management System
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Rails application for managing intelligent agents with advanced features and persistence.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- Agent registration and management
+- Capability vector storage and indexing
+- RESTful API endpoints
+- Web interface for agent interaction
 
-* System dependencies
+## System Requirements
 
-* Configuration
+- Ruby 3.0+
+- Rails 8.0+
+- PostgreSQL
+- Node.js (for JavaScript compilation)
 
-* Database creation
+## Setup
 
-* Database initialization
+1. Database setup:
+```bash
+rails db:create
+rails db:migrate
+```
 
-* How to run the test suite
+2. Start the server:
+```bash
+rails server
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Database Schema
 
-* Deployment instructions
+The system uses PostgreSQL with:
+- UUID primary keys for agents
+- JSONB for capability storage
+- GIN indexes for efficient capability querying
+- Float arrays for capability vectors
 
-* ...
+## API Endpoints
+
+The application provides RESTful endpoints for:
+- Agent registration
+- Capability updates
+- Agent discovery
+- Inter-agent communication
+
+## Testing
+
+Run the test suite with:
+```bash
+rails test
+```
+
+## Development
+
+The application uses:
+- Stimulus for JavaScript interactions
+- Standard Rails conventions
+- PostgreSQL-specific features for performance
