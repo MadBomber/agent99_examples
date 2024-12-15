@@ -1,0 +1,19 @@
+# config/database.yml
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: agent_registry_development
+
+test:
+  <<: *default
+  database: agent_registry_test
+
+production:
+  <<: *default
+  database: agent_registry_production
+  username: agent_registry
+  password: <%= ENV['AGENT_REGISTRY_DATABASE_PASSWORD'] %>
