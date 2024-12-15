@@ -6,9 +6,10 @@ gem "pg"  # PostgreSQL adapter
 gem "agent99"
 gem "amazing_print"
 gem "debug_me"
-gem "neighbors"
 gem "ai_client"
 gem "matrix"
+gem "raix"
+gem "sublayer"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 # Use sqlite3 as the database for Active Record
