@@ -1,0 +1,8 @@
+source "https://rubygems.org"
+
+gem "agent99"       # An intelligent agent framework for Ruby
+gem "ai_client"     # A generic AI Client for many providers
+gem "amazing_print" # Pretty print Ruby objects with proper indentation and colors
+gem "debug_me"      # A tool to print the labeled value of variables.
+gem "sinatra"       # Classy web-development dressed in a DSL
+
